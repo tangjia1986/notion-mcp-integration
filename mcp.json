@@ -1,0 +1,53 @@
+{
+  "tools": {
+    "notion_create_page": {
+      "function": "create_page",
+      "description": "在 Notion 中创建新页面",
+      "parameters": {
+        "parent_id": "父页面或数据库的 ID",
+        "title": "页面标题",
+        "content": "页面内容配置"
+      }
+    },
+    "notion_update_page": {
+      "function": "update_page",
+      "description": "更新 Notion 页面",
+      "parameters": {
+        "page_id": "页面 ID",
+        "properties": "要更新的属性"
+      }
+    },
+    "notion_get_page": {
+      "function": "get_page",
+      "description": "获取 Notion 页面信息",
+      "parameters": {
+        "page_id": "页面 ID"
+      }
+    },
+    "notion_create_database": {
+      "function": "create_database",
+      "description": "创建 Notion 数据库",
+      "parameters": {
+        "parent_id": "父页面 ID",
+        "title": "数据库标题",
+        "properties": "数据库属性配置"
+      }
+    },
+    "notion_query_database": {
+      "function": "query_database",
+      "description": "查询 Notion 数据库",
+      "parameters": {
+        "database_id": "数据库 ID",
+        "filter": "可选的过滤条件"
+      }
+    },
+    "notion_search": {
+      "function": "search",
+      "description": "搜索 Notion",
+      "parameters": {
+        "query": "搜索关键词",
+        "filter": "可选的过滤条件"
+      }
+    }
+  }
+}
